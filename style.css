@@ -93,5 +93,11 @@ body {
 .body-container .search-form h1 {
   color: white;
   font-weight: 800;
+  margin: 0;
+  padding: 1rem;
+}
+
+.body-container .search-form .search-bar {
+  padding-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

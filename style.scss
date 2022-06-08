@@ -17,22 +17,33 @@ body{
         .gif-results{
             width: 100%;
             overflow: auto;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: flex-start;
             justify-content: center;
-            
-            // display: grid;
-            // grid-template-columns: repeat(3, 1fr);
             .gif-card{
-                h2{
-                    color:white;
-                    font-size: 14px;
-                }
+                transition: 1s ease-in-out;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .overlay{
+                    opacity: 0;
+                    position: absolute;
+                    h2{
+                        color:white;
+                        font-size: 14px;
+                    }
+                };
                 img{
                 padding: 1rem;
                 width: 65%;
                 height: auto;
+                }
+                &:hover .overlay{
+                    opacity: 1;
+                }
+                &:hover img{
+                    opacity: 0.2;
                 }
             }
         }

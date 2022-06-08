@@ -28,11 +28,24 @@ body {
 .body-container .results-container .gif-results {
   width: 100%;
   overflow: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body-container .results-container .gif-results .gif-card {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -41,7 +54,12 @@ body {
           justify-content: center;
 }
 
-.body-container .results-container .gif-results .gif-card h2 {
+.body-container .results-container .gif-results .gif-card .overlay {
+  opacity: 0;
+  position: absolute;
+}
+
+.body-container .results-container .gif-results .gif-card .overlay h2 {
   color: white;
   font-size: 14px;
 }
@@ -50,6 +68,14 @@ body {
   padding: 1rem;
   width: 65%;
   height: auto;
+}
+
+.body-container .results-container .gif-results .gif-card:hover .overlay {
+  opacity: 1;
+}
+
+.body-container .results-container .gif-results .gif-card:hover img {
+  opacity: 0.2;
 }
 
 .body-container .results-container #show-more-btn {

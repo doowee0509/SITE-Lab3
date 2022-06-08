@@ -68,7 +68,9 @@ function displayResults(responseData, showMore){
         results.innerHTML += `
         <div class="gif-card"> 
             <img src='${responseData.data[i].images.downsized.url}'/>
-            <h2>${responseData.data[i].title}</h2>
+            <div class="overlay">
+                <h2>${responseData.data[i].title}</h2>
+            </div>
         </div>
         `
     }

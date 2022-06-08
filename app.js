@@ -1,7 +1,7 @@
 //global constants
 const API_KEY = 'nOjzgnRK5wSxGHruvjd3HVSux7Zxk46H'
 const rating = 'PG'
-const limit = 10
+const limit = 9
 const startingUrl = 'http://api.giphy.com/v1/gifs/'
 const results = document.querySelector('.gif-results')
 const form = document.querySelector('.search-form')

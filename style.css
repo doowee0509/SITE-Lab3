@@ -1,0 +1,71 @@
+body {
+  background-color: #0d0c0c;
+  margin: 0;
+}
+
+.body-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0 10rem;
+}
+
+.body-container .results-container {
+  width: 100%;
+  border-left: solid 2px #252b30;
+  border-right: solid 2px #252b30;
+}
+
+.body-container .results-container .gif-results {
+  width: 100%;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body-container .results-container .gif-results .gif-card h2 {
+  color: white;
+  font-size: 14px;
+}
+
+.body-container .results-container .gif-results .gif-card img {
+  padding: 1rem;
+  width: 65%;
+  height: auto;
+}
+
+.body-container .results-container #show-more-btn {
+  padding: .2rem;
+  margin: 1.2rem;
+  font-weight: 500;
+}
+
+.body-container .search-form {
+  width: 100%;
+  border-left: solid 2px #252b30;
+  border-right: solid 2px #252b30;
+}
+
+.body-container .search-form h1 {
+  color: white;
+  font-weight: 800;
+}
+/*# sourceMappingURL=style.css.map */
